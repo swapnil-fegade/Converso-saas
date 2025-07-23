@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';  // Forces SSR for this route
+
 import React from 'react'
 import CompanionCard from "@/components/CompanionCard";
 import CompanionsList from "@/components/CompanionsList";

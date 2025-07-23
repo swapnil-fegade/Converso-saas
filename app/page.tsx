@@ -1,5 +1,4 @@
 import React from 'react'
-import {Button} from "@/components/ui/button";
 import CompanionCard from "@/components/CompanionCard";
 import CompanionsList from "@/components/CompanionsList";
 import CTA from "@/components/CTA";
@@ -7,6 +6,7 @@ import {getAllCompanions, getRecentSessions} from "@/lib/actions/companion.actio
 import {getSubjectColor} from "@/lib/utils";
 
 const Page = async () => {
+    // @ts-ignore
     const companions = await getAllCompanions({ limit: 3 });
     const recentSessionsCompanions = await getRecentSessions(10);
 
